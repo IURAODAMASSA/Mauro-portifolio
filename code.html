@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Portfólio de Mauro César</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  }
+  header p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    margin: 10px 0 0;
+    color: #dcd6f7;
+  }
+  main {
+    max-width: 900px;
+    width: 100%;
+  }
+  section {
+    margin-bottom: 40px;
+  }
+  section.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+  }
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.35);
+  }
+  .project-image {
+    height: 160px;
+    background-color: #999;
+    background-size: cover;
+    background-position: center;
+  }
+  .project-content {
+    padding: 15px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .project-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0 0 12px 0;
+  }
+  .project-link {
+    margin-top: auto;
+    text-align: right;
+  }
+  .project-link a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #f8c291;
+    transition: color 0.3s ease;
+  }
+  .project-link a:hover {
+    color: #e67e22;
+  }
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1rem;
+    color: #dcd6f7;
+  }
+  footer a {
+    color: #f8c291;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  footer a:hover {
+    color: #e67e22;
+  }
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mauro César</h1>
+  <p>Programador</p>
+</header>
+<main>
+  <section aria-label="Sobre Mim">
+    <h2>Sobre Mim</h2>
+    <p>Meu nome é Mauro César e sou um programador profissional com 5 anos de experiência no mercado. Trabalhei na Nintendo e na Playstation, focando na programação de jogos.</p>
+  </section>
+  <section class="projects" aria-label="Projetos">
+    <h2>Projetos</h2>
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=400&q=80');" alt="Imagem do projeto Corrida maluca"></div>
+      <div class="project-content">
+        <h2 class="project-title">Corrida Maluca</h2>
+        <div class="project-link"><a href="https://editor.p5js.org/maaauro/sketches/33s64dZjM" target="_blank" rel="noopener noreferrer">Veja o projeto</a></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=400&q=80');" alt="Imagem do projeto Quente ou frio"></div>
+      <div class="project-content">
+        <h2 class="project-title">Quente ou frio</h2>
+        <div class="project-link"><a href="https://editor.p5js.org/maaauro/sketches/fe75ydAZA" target="_blank" rel="noopener noreferrer">Veja o projeto</a></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-image" style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80');" alt="Imagem do projeto Efeito monalisa"></div>
+      <div class="project-content">
+        <h2 class="project-title">Efeito Monalisa</h2>
+        <div class="project-link"><a href="https://editor.p5js.org/maaauro/sketches/yN-fUyvXa" target="_blank" rel="noopener noreferrer">Veja o projeto</a></div>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <p>Contato: <a href="https://www.instagram.com/mzhauro_" target="_blank" rel="noopener noreferrer">@mzhauro_</a></p>
+</footer>
+</body>
+</html>
+
